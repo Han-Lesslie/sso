@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="//layui.hcwl520.com.cn/layui/css/layui.css?v=201811010202" rel="stylesheet">
+</head>
+<body style="margin-left: 25%;margin-right: 25%;margin-top:150px">
+
+<div style="padding: 20px; background-color: #F2F2F2;">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-card">
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>用户登录</legend>
+            </fieldset>
+            <form class="layui-form" method="post" action="/login">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">用户名</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="userName" lay-verify="title" autocomplete="off" placeholder="请输入标题"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">密码</label>
+                    <div class="layui-input-block">
+                        <input type="password" name="password" lay-verify="required" placeholder="请输入"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+                        <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                </div>
+            </form>
+            <blockquote class="layui-elem-quote layui-text">
+                SSO登录演示：用户名和密码相同即可登录
+            </blockquote>
+        </div>
+    </div>
+</div>
+<script src="//layui.hcwl520.com.cn/layui/layui.js?v=201811010202"></script>
+</body>
+</html>
